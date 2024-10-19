@@ -36,5 +36,5 @@ Todos los arichivos `html` arrancan con una estructura que es la siguiente: (pro
 
 ## Moverse por las carpetas
 Si quisiera cargar un recurso que este en la carpeta (o en otra) por ejemplo una imagen puedo usar lo siguiente:
-`./`: Significa el mismo path en el que esta el programa y puedo moverme al resto de carpetas.
-`../`: Sirve para "subir" de la carpeta en la que este.
+- `./`: Significa el mismo path en el que esta el programa y puedo moverme al resto de carpetas.
+- `../`: Sirve para "subir" de la carpeta en la que este.
