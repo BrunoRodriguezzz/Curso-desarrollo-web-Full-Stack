@@ -1,7 +1,12 @@
 # HTML
-
 HTML es un lenguaje de marcado de hipertexto. Es decir que es un lenguaje de marcas compuesto por un conjunto de elementos para darle estructura y semántica al contenido. En HTML 5 hay que usar las etiquetas/elementos que correspondan. Todo lo que tenga que ver con lo estético se usa CSS
-El archivo principal se llama `index`
+El archivo principal se llama `index`.
+
+- [HTML](#html)
+  - [Etiquetas](#etiquetas)
+  - [Atributos](#atributos)
+  - [Estructura básica](#estructura-básica)
+  - [Moverse por las carpetas](#moverse-por-las-carpetas)
 
 ## Etiquetas
 Estan compuestas por una etiqueta de apertura y etiquetas de cierre [Link completo](https://www.w3schools.com/tags/), en el link al seleccionar una etiqueta tambien muestra los **atributos** propios de esa etiqueta. Algunos comúnes:
@@ -30,7 +35,11 @@ Todos los arichivos `html` arrancan con una estructura que es la siguiente: (pro
     <head>          <!--Todo el contenido NO visible o información para el navegador-->
         <meta charset="utf-8"/> <!--Esto sirve para indicarle al navegador que caracteres se van a utilizar-->
     </head> 
-    <body></body>   <!--Aca va todo el contenido visible-->
+    <body>  <!--Aca va todo el contenido visible-->
+        <header></header>
+        <main></main>       <!--Es es más opcional pero en general sigue esta estructura-->
+        <footer></footer>
+    </body>   
 </html>
 ```
 

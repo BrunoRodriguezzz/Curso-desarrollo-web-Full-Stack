@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgb(0, 0, 0, 0.87);
+    color: rgb(226, 199, 19);
+}
+
+header h1 {
+    size: 20px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+header ul a{
+    text-decoration: none;
+    color: rgb(226, 199, 19);
+}
+
+header ul a:hover{
+    color: rgb(222, 58, 21);
+    font-size: 21px;
+}
+
+#imagenSerpiente {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Asegura que la imagen quede por debajo del header */
+}
+
+main {
+    background-color: chocolate;
+}
