@@ -7,6 +7,7 @@ El archivo principal se llama `index`.
   - [Atributos](#atributos)
   - [Estructura básica](#estructura-básica)
   - [Moverse por las carpetas](#moverse-por-las-carpetas)
+  - [Formulario](#formulario)
 
 ## Etiquetas
 Estan compuestas por una etiqueta de apertura y etiquetas de cierre [Link completo](https://www.w3schools.com/tags/), en el link al seleccionar una etiqueta tambien muestra los **atributos** propios de esa etiqueta. Algunos comúnes:
@@ -47,3 +48,24 @@ Todos los arichivos `html` arrancan con una estructura que es la siguiente: (pro
 Si quisiera cargar un recurso que este en la carpeta (o en otra) por ejemplo una imagen puedo usar lo siguiente:
 - `./`: Significa el mismo path en el que esta el programa y puedo moverme al resto de carpetas.
 - `../`: Sirve para "subir" de la carpeta en la que este.
+
+## Formulario
+Va a ser la forma de recibir información por parte del usuario. Procesar esa información va a ser trabajo del backend en nuestro caso **PHP**. [Algunos templates](https://freefrontend.com/css-forms/). 
+Un ejemplo de un formulario en HTML:
+
+```html
+<form action="/submit-form" method="post">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+</form>
+```
+
+- `<form>`: Este elemento crea un formulario para la entrada del usuario. El atributo `action` especifica a dónde se enviarán los datos del formulario cuando se envíen, y el atributo `method` especifica el método HTTP que se usará (en este caso, `post`).
+- `<label>`: Este elemento etiqueta los campos del formulario. El atributo `for` debe coincidir con el `id` del campo de entrada correspondiente.
+- `<input>`: Este elemento crea un campo de entrada donde el usuario puede ingresar datos. El atributo `type` especifica el tipo de entrada (en este caso, `text`), `id` proporciona un identificador único para el campo, y `name` es el nombre del campo que se enviará con los datos del formulario.
+- `<input type="submit">`: Este elemento crea un botón de envío que envía los datos del formulario al servidor especificado en el atributo `action` del formulario.
+
+Este formulario simple solicita al usuario su nombre y apellido y luego envía esos datos al servidor cuando se hace clic en el botón "Submit".

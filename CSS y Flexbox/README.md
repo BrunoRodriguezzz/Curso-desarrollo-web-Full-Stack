@@ -8,7 +8,7 @@ CSS (Cascading Style Sheets) es un lenguaje para controlar el aspecto o presenta
   - [Selectores](#selectores)
     - [Algunas combinaciones de selectores](#algunas-combinaciones-de-selectores)
     - [Pseudo clases](#pseudo-clases)
-      - [Pseudo elementos](#pseudo-elementos)
+    - [Pseudo elementos](#pseudo-elementos)
   - [Prioridades](#prioridades)
   - [Herencia](#herencia)
   - [Display](#display)
@@ -16,6 +16,7 @@ CSS (Cascading Style Sheets) es un lenguaje para controlar el aspecto o presenta
   - [Propiedad position](#propiedad-position)
   - [Propiedades de texto](#propiedades-de-texto)
     - [Fuentes](#fuentes)
+    - [Iconos](#iconos)
   - [Propiedades color y background](#propiedades-color-y-background)
 - [Flexbox](#flexbox)
   - [Alineación COMPLETAR](#alineación-completar)
@@ -102,7 +103,7 @@ div.opcion-servicio.fondo-blanco:hover {
 ```
 En este caso lo que estoy haciendo es que cuando a un `div` con las clases `opcion-servicio` y `fondo-blanco` le pase por arriba con el mouse el color pase a ser gris.
 
-#### Pseudo elementos
+### Pseudo elementos
 Las que mas vamos a usar `after` y `before` con un `::` y estos sirven para añadir contenido (otros permiten seleccionar partes de un elemento) elegir cierta parte de un elemento. [Lista completa](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements)
 ```css
 h1::before { content: "Capítulo - "; } /* añade contenido antes del elemento */
@@ -140,7 +141,7 @@ Algunos elementos tienen un estilo por defecto al ser mostrados, pero que puede 
 
 ## Modelo de cajas
 Todo los elementos de HTML para css son un caja, que esta conformada de la siguiente forma:
-![Modelo de Cajas](./Fotos/Modelo-de-cajas.jpeg) Agregar
+![Modelo de Cajas](./Fotos/Modelo-de-cajas.jpeg)
 - El **margin** separa el contenido del exterior.
 - El **border** Separa el margen del padding. Se puede personalizar (tamaño, tipo, color, etc).
 - El **padding** Separa el contenido del borde.
@@ -177,11 +178,16 @@ Podemos personalizar los textos de varias maneras, estas son las más comunes:
 ### Fuentes
 Para poner alguna letra la recomendación es usar alguna que este en [Google Fonts](https://fonts.google.com/) para lo cual primero hay que importarla y después usar `font-family`.
 
+### Iconos
+Podemos usar iconos de la misma forma que las fuentes, una [opcion](https://icons8.com/line-awesome). Se tratan como texto, por lo que usamos `font-size` para sumarle el tamaño o `color` para cambiarle el color.
+
 ## Propiedades color y background
 Podemos personalizar el color y los fondos usando las siguientes propiedades:
 - `color`: Establece el color del texto
 - `background-color`: Establece el color del fondo. Se puede poner en transparent inclusive.
 - `background-image`: Establecemos una imagen como fondo. Valor: url o none.
+  - Usando `url()`, le indicamos la dirección donde esta.
+  - Para hacer que la imagen cubra bien todo el fondo usar `background-size: cover;`
 - `background-repeat`: Podemos hacer que esa imagen se repita de algunas formas. [Detalles](https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat)
 - `background-attachment`: Podemos hacer que la imagen del fondo sea fija. [Detalles](https://developer.mozilla.org/es/docs/Web/CSS/background-attachment)
 - `background-position`: Establece la posición de la imagen de fondo. Valores: valor | top | center | bottom | left | center | right
