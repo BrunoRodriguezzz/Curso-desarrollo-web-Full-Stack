@@ -8,6 +8,9 @@ El archivo principal se llama `index`.
   - [Estructura básica](#estructura-básica)
   - [Moverse por las carpetas](#moverse-por-las-carpetas)
   - [Formulario](#formulario)
+  - [Métodos GET y POST](#métodos-get-y-post)
+    - [GET](#get)
+    - [POST](#post)
 
 ## Etiquetas
 Estan compuestas por una etiqueta de apertura y etiquetas de cierre [Link completo](https://www.w3schools.com/tags/), en el link al seleccionar una etiqueta tambien muestra los **atributos** propios de esa etiqueta. Algunos comúnes:
@@ -69,3 +72,24 @@ Un ejemplo de un formulario en HTML:
 - `<input type="submit">`: Este elemento crea un botón de envío que envía los datos del formulario al servidor especificado en el atributo `action` del formulario.
 
 Este formulario simple solicita al usuario su nombre y apellido y luego envía esos datos al servidor cuando se hace clic en el botón "Submit".
+
+
+
+## Métodos GET y POST
+Sirven para poder enviar información del front al back y de esa forma procesarla para hacer algo.
+
+### GET
+En este caso la información se envía directamente por medio de la url y **la información esta separada por un ?**. Un ejemplo: `www.algo.com/index.html?key1=value1?key2=value2...`
+
+- Al enviar la información por la url se limitada a 2000 caracteres.
+- La información es visible por lo que **nunca se manda información sensible**.
+- **No se puede enviar datos binarios** (archivos, fotos).
+- En PHP los datos se administran con el **array asociativo $_GET**.
+
+### POST
+En este caso la información se codifica y se envía a través del **body del HTTP Request**, por lo que no aparece en la url.
+
+- No cuenta con límite de cantidad de información.
+- Como la información no es visible, se puede envir información sensible.
+- Se puede enviar datos binarios.
+- En PHP los datos se administran con el **array asociativo $_POST**.
