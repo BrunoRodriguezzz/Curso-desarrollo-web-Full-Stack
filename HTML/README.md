@@ -73,7 +73,7 @@ Un ejemplo de un formulario en HTML:
 
 Este formulario simple solicita al usuario su nombre y apellido y luego envía esos datos al servidor cuando se hace clic en el botón "Submit".
 
-
+![ImagenDeImputs](./fotos/ElementosFormularios.jpeg)
 
 ## Métodos GET y POST
 Sirven para poder enviar información del front al back y de esa forma procesarla para hacer algo.

@@ -20,9 +20,12 @@ CSS (Cascading Style Sheets) es un lenguaje para controlar el aspecto o presenta
   - [Propiedades color y background](#propiedades-color-y-background)
 - [Flexbox](#flexbox)
   - [Alineación COMPLETAR](#alineación-completar)
+- [Media Query](#media-query)
 
 ## Estructura básica
 ![Imagen de la estructura básica](./Fotos/estructura-basica.jpeg)
+
+
 La estructura básica del código CSS está compuesta por:
 - Regla: Cada uno de los estilos que componen una hoja de estilos CSS. Comienza con un selector y entre llaves, una declaración.
 - Selector: Indica el elemento o los elementos a los que se aplica la regla CSS. **"A quién hay que hacérselo"**.
@@ -208,3 +211,24 @@ Podemos alinear los elementos en la dirección principal y en la dirección secu
 - `justify-content: space-evenly`: Funciona de forma similar al `space-around` solo que TODAS las distancias son X.
 
 Tambien podemos usar `gap:` para determinar la distancia entre cada elemento en ambas direcciones o puedo poner una distancia fija para cada eje usando: `row-gap:` y `column-gap:`
+
+# Media Query
+Podemos utilizar media query para aplicar distintos estilos dependiendo de como se muestra la página usando `@media`. Ejemplo:
+```CSS
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  h1  {
+    color: red;
+  }
+}
+```
+- `@media only screen and (max-width: 600px)`:
+  - Este es un **Media Query** en CSS. Los Media Queries se utilizan para aplicar estilos CSS específicos dependiendo de ciertas condiciones, como el tamaño de la pantalla.
+  - `only screen` especifica que los estilos dentro del bloque se aplicarán solo a dispositivos con pantallas (excluyendo otros tipos de dispositivos como impresoras).
+  - `max-width: 600px` indica que los estilos se aplicarán solo si el ancho de la pantalla es de 600 píxeles o menos.
+- `body { background-color: lightblue; }:`
+  - Dentro del bloque `@media`, se define una regla CSS que cambia el color de fondo del elemento `<body>` a lightblue (azul claro) y cambia el color de los `<h1>` a rojo.
+  - Esto significa que cuando el ancho de la pantalla es de 600 píxeles o menos, el fondo del cuerpo de la página se volverá azul claro y cambia el color de los h1 a rojo.

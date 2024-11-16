@@ -66,3 +66,7 @@ Explicación del Ejemplo
 - **Consulta SQL**: Se realiza una consulta para seleccionar datos de la tabla `usuarios`.
 - **Procesamiento de Resultados**: Se recorren los resultados y se imprimen en pantalla.
 - **Cierre de Conexión**: Se cierra la conexión a la base de datos.
+
+## MVC
+Muy en resumen consiste en separar el código en funciones y responsabilidad formando "capas" que son **Modelo-Vista-Controlador**.
+
