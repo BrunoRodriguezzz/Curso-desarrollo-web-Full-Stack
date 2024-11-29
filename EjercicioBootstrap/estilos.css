@@ -1,0 +1,9 @@
+#logo {
+    position: relative;
+    z-index: 10;
+}
+
+#fondo-logo {
+    position: relative;
+    z-index: 1;
+}
